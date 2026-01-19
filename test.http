@@ -1,0 +1,50 @@
+### Fetch Customer Ageing Data
+POST http://localhost:4004/odata/v4/custageingservice/getCustomerAgeingData
+Content-Type: application/json
+
+{
+  "companyCode": "1000",
+  "customerRanges": [
+    {
+      "low": "200000",
+      "high": "200005"
+    },
+    {
+      "low": "200006",
+      "high": "200010"
+    }
+  ],
+  "customerAccGrpRanges": ["CUST","CUSL"],
+  "glAccountRanges": [
+    {
+      "low": "516310",
+      "high": "516311"
+    },
+    {
+      "low": "516210",
+      "high": "516211"
+    },
+    {
+      "low": "207001",
+      "high": "207002"
+    }
+  ],
+  "profitCentreRanges": [
+    {
+      "low": "DUMMY001",
+      "high": "DUMMY010"
+    },
+        {
+      "low": "19001",
+      "high": "19005"
+    },
+    {
+      "low": "12090",
+      "high": "12095"
+    }
+  ],
+  "transactionCurrency": "INR",
+  "keyDate": "2025-06-01",
+  "includeSGLItems": false,
+  "ageingFrom":"R1"
+}

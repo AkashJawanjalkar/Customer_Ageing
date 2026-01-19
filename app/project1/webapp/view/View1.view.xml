@@ -1,0 +1,242 @@
+<mvc:View
+    controllerName="project1.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:l="sap.ui.layout"
+>
+    <Page
+        id="page"
+        class="sapUiResponsiveContentPadding  "
+    >
+        <content>
+            <Panel
+                id="filterSection"
+                width="100%"
+                class="sapUiMediumMarginTop"
+            >
+                <headerToolbar>
+                    <OverflowToolbar id="_IDGenOverflowToolbar2">
+                        <Title
+                            id="_IDGenTitle"
+                            text="Customer Ageing"
+                        />
+                    </OverflowToolbar>
+                </headerToolbar>
+
+                <HBox
+                    id="_IDGenMainHBox"
+                    class="sapUiSmallMargin"
+                    justifyContent="SpaceBetween"
+                >
+                    <VBox
+                        class="sapUiSmallMarginEnd"
+                        width="45%"
+                    >
+                        <HBox
+                            class="sapUiSmallMarginBottom"
+                            alignItems="Center"
+                        >
+                            <Label
+                                text="Company Code"
+                                width="12rem"
+                                design="Bold"
+                                required="true"
+                            />
+                            <Input
+                                id="companyCodeInput"
+                                width="410px"
+                                liveChange=".onLiveChange"
+                            />
+                        </HBox>
+
+                        <HBox
+                            class="sapUiSmallMarginBottom"
+                            alignItems="Center"
+                        >
+                            <Label
+                                text="GL Account"
+                                width="12rem"
+                                design="Bold"
+                               
+                            />
+                            <Input
+                                id="glAccountInput"
+                                width="410px"
+                                showValueHelp="true"
+                                valueHelpRequest=".onGLF4"
+                            />
+                        </HBox>
+
+                        <HBox
+                            class="sapUiSmallMarginBottom"
+                            alignItems="Center"
+                        >
+                            <Label
+                                text="Customer"
+                                width="12rem"
+                                design="Bold"
+                               
+                            />
+                            <Input
+                                id="customerInput"
+                                width="410px"
+                                showValueHelp="true"
+                                valueHelpRequest=".onCustomerF4"
+                            />
+                        </HBox>
+
+                        <HBox
+                            class="sapUiSmallMarginBottom"
+                            alignItems="Center"
+                        >
+                            <Label
+                                text="Profit Centre"
+                                width="12rem"
+                                design="Bold"
+                                
+                            />
+                            <Input
+                                id="profitCentreInput"
+                                width="410px"
+                                showValueHelp="true"
+                                valueHelpRequest=".onProfitCentreF4"
+                            />
+                        </HBox>
+
+                        <HBox
+                            class="sapUiSmallMarginBottom"
+                            alignItems="Center"
+                        >
+                            <Label
+                                text="Transaction Currency"
+                                width="12rem"
+                                design="Bold"
+                               
+                            />
+                            <Input
+                                id="currencyInput"
+                                width="200px"
+                                placeholder="e.g. INR"
+                                liveChange=".onLiveChange"
+                            />
+                        </HBox>
+
+                        <HBox
+                            class="sapUiSmallMarginBottom"
+                            alignItems="Center"
+                        >
+                            <Label
+                                text="Customer Account Group"
+                                width="12rem"
+                                design="Bold"
+                               
+                            />
+                            <Input
+                                id="custAccGrpInput"
+                                width="410px"
+                                placeholder="e.g. CUST,CUSL"
+                                liveChange=".onLiveChange"
+                            />
+                        </HBox>
+                    </VBox>
+
+                    <VBox
+                        class="sapUiSmallMarginStart"
+                        width="45%"
+                    >
+                        <HBox
+                            class="sapUiSmallMarginBottom"
+                            alignItems="Center"
+                        >
+                            <Label
+                                text="Key Date"
+                                width="8rem"
+                                required="true"
+                                design="Bold"
+                            />
+
+                            <DatePicker
+                                id="keyDatePicker"
+                                valueFormat="yyyy-MM-dd"
+                                displayFormat="long"
+                                width="200px"
+                                change=".onDateChange"
+                            />
+                        </HBox>
+
+                        <VBox
+                            id="_IDGenVBox2"
+                            class="sapUiSmallMarginBottom"
+                        >
+                            <Label
+                                id="_IDGenLabel93"
+                                text="Ageing from:"
+                                design="Bold"
+                                required="true"
+                            />
+
+                            <RadioButtonGroup
+                                id="ageingGroup"
+                                columns="1"
+                               
+                            >
+                                <RadioButton
+                                    id="_IDGenRadioButton"
+                                    text="Net due Date (Baseline Date + Payment Terms Days)"
+                                />
+                                <RadioButton
+                                    id="_IDGenRadioButton1"
+                                    text="Posting Date + Payment Terms Days"
+                                />
+                                <RadioButton
+                                    id="_IDGenRadioButton2"
+                                    text="Document Date + Payment Terms Days"
+                                />
+                                <RadioButton
+                                    id="_IDGenRadioButton3"
+                                    text="Baseline Date"
+                                />
+                                <RadioButton
+                                    id="_IDGenRadioButton4"
+                                    text="Posting Date"
+                                />
+                                <RadioButton
+                                    id="_IDGenRadioButton5"
+                                    text="Document Date"
+                                />
+                            </RadioButtonGroup>
+                        </VBox>
+
+                        <HBox
+                            class="sapUiSmallMarginBottom"
+                            alignItems="Center"
+                        >
+                            <Label
+                                text="Include Special GL items"
+                                width="12rem"
+                                design="Bold"
+                            />
+                            <CheckBox
+                                id="includeSGL"
+                                style="transform: scale(1.5);"
+                            />
+                        </HBox>
+                    </VBox>
+                </HBox>
+            </Panel>
+        </content>
+
+        <footer>
+            <OverflowToolbar id="_IDGenOverflowToolbar3">
+                <ToolbarSpacer id="_IDGenToolbarSpacer" />
+                <Button
+                    id="_IDGenButton"
+                    text="Go"
+                    type="Emphasized"
+                    press=".onPressGo"
+                    width="6rem"
+                />
+            </OverflowToolbar>
+        </footer>
+    </Page>
+</mvc:View>
