@@ -40,7 +40,7 @@
                     <OverflowToolbar id="_IDGenOverflowToolbar1">
                         <Title
                             id="_IDGenTitle1"
-                            text="Report ({docs>/nDataLength})"
+                            text="Documents ({docs>/nDataLength})"
                         />
                         <ToolbarSpacer id="_IDGenToolbarSpacer1" />
                         <Button
@@ -74,7 +74,7 @@
                             <!-- Company Code -->
                             <table:Column
                                 id="_IDGenColumn1"
-                                width="150px"
+                                width="120px"
                                 visible="true"
                             >
                                 <Label
@@ -92,7 +92,7 @@
                             <!-- Fiscal Year -->
                             <table:Column
                                 id="_IDGenColumn2"
-                                width="150px"
+                                width="100px"
                                 visible="true"
                             >
                                 <Label
@@ -110,7 +110,7 @@
                             <!-- Accounting Document -->
                             <table:Column
                                 id="_IDGenColumn3"
-                                width="180px"
+                                width="160px"
                                 visible="true"
                             >
                                 <Label
@@ -128,11 +128,11 @@
                             <!-- Accounting Document Item -->
                             <table:Column
                                 id="_IDGenColumn4"
-                                width="250px"
+                                width="190px"
                             >
                                 <Label
                                     id="_IDGenLabel9"
-                                    text="Accounting DocumentItem"
+                                    text="Accounting Document Item"
                                     visible="true"
                                 />
                                 <table:template>
@@ -146,7 +146,7 @@
                             <!-- Clearing Date -->
                             <table:Column
                                 id="_IDGenColumn5"
-                                width="150px"
+                                width="110px"
                                 visible="true"
                             >
                                 <Label
@@ -164,12 +164,12 @@
                             <!-- Special GL Code -->
                             <table:Column
                                 id="_IDGenColumn6"
-                                width="150px"
+                                width="130px"
                                 visible="true"
                             >
                                 <Label
                                     id="_IDGenLabel11"
-                                    text="Special GLCode"
+                                    text="Special GL Code"
                                 />
                                 <table:template>
                                     <Text
@@ -182,7 +182,7 @@
                             <!-- Debit/Credit Code -->
                             <table:Column
                                 id="_IDGenColumn7"
-                                width="150px"
+                                width="130px"
                                 visible="true"
                             >
                                 <Label
@@ -200,7 +200,7 @@
                             <!-- Assignment Reference -->
                             <table:Column
                                 id="_IDGenColumn8"
-                                width="180px"
+                                width="160px"
                                 visible="true"
                             >
                                 <Label
@@ -219,12 +219,12 @@
 
                             <table:Column
                                 id="_IDGenColumn9"
-                                width="180px"
+                                width="150px"
                                 visible="false"
                             >
                                 <Label
                                     id="_IDGenLabel14"
-                                    text="DocumentItem Text"
+                                    text="Document Item Text"
                                 />
                                 <table:template>
                                     <Text
@@ -236,7 +236,7 @@
 
                             <table:Column
                                 id="_IDGenColumn10"
-                                width="180px"
+                                width="130px"
                                 visible="false"
                             >
                                 <Label
@@ -253,7 +253,7 @@
 
                             <table:Column
                                 id="_IDGenColumn11"
-                                width="180px"
+                                width="120px"
                                 visible="false"
                             >
                                 <Label
@@ -270,7 +270,7 @@
 
                             <table:Column
                                 id="_IDGenColumn12"
-                                width="180px"
+                                width="150px"
                                 visible="false"
                             >
                                 <Label
@@ -287,7 +287,7 @@
 
                             <table:Column
                                 id="_IDGenColumn13"
-                                width="150px"
+                                width="130px"
                                 visible="false"
                             >
                                 <Label
@@ -304,7 +304,7 @@
 
                             <table:Column
                                 id="_IDGenColumn16"
-                                width="150px"
+                                width="100px"
                                 visible="false"
                             >
                                 <Label
@@ -321,7 +321,7 @@
 
                             <table:Column
                                 id="_IDGenColumn17"
-                                width="250px"
+                                width="200px"
                                 visible="false"
                             >
                                 <Label
@@ -338,7 +338,7 @@
 
                             <table:Column
                                 id="_IDGenColumn18"
-                                width="150px"
+                                width="95px"
                                 visible="false"
                             >
                                 <Label
@@ -354,7 +354,7 @@
                             </table:Column>
                             <table:Column
                                 id="_IDGenColumn19"
-                                width="250px"
+                                width="95px"
                                 visible="false"
                             >
                                 <Label
@@ -371,7 +371,7 @@
 
                             <table:Column
                                 id="_IDGenColumn20"
-                                width="150px"
+                                width="120px"
                                 visible="false"
                             >
                                 <Label
@@ -388,7 +388,7 @@
 
                             <table:Column
                                 id="_IDGenColumn21"
-                                width="150px"
+                                width="120px"
                                 visible="false"
                             >
                                 <Label
@@ -405,7 +405,7 @@
 
                             <table:Column
                                 id="_IDGenColumn22"
-                                width="180px"
+                                width="160px"
                                 visible="false"
                             >
                                 <Label
@@ -422,7 +422,7 @@
 
                             <table:Column
                                 id="_IDGenColumn23"
-                                width="180px"
+                                width="160px"
                                 visible="false"
                             >
                                 <Label
@@ -439,7 +439,7 @@
 
                             <table:Column
                                 id="_IDGenColumn24"
-                                width="150px"
+                                width="130px"
                                 visible="false"
                             >
                                 <Label
@@ -456,7 +456,7 @@
 
                             <table:Column
                                 id="_IDGenColumn25"
-                                width="150px"
+                                width="100px"
                                 visible="false"
                             >
                                 <Label
@@ -490,7 +490,7 @@
 
                             <table:Column
                                 id="_IDGenColumn27"
-                                width="180px"
+                                width="140px"
                                 visible="false"
                             >
                                 <Label
@@ -507,7 +507,7 @@
 
                             <table:Column
                                 id="_IDGenColumn28"
-                                width="150px"
+                                width="110px"
                                 visible="false"
                             >
                                 <Label
@@ -524,7 +524,7 @@
 
                             <table:Column
                                 id="_IDGenColumn29"
-                                width="150px"
+                                width="110px"
                                 visible="false"
                             >
                                 <Label
@@ -540,7 +540,7 @@
                             </table:Column>
 
                             <table:Column
-                                width="180px"
+                                width="160px"
                                 visible="false"
                             >
                                 <Label text="Purchasing Document" />
@@ -550,10 +550,10 @@
                             </table:Column>
 
                             <table:Column
-                                width="250px"
+                                width="200px"
                                 visible="false"
                             >
-                                <Label text="PurchasingDocumen tItem" />
+                                <Label text="Purchasing Document Item" />
                                 <table:template>
                                     <Text
                                         text="{docs>PurchasingDocumentItem}"
@@ -562,7 +562,7 @@
                             </table:Column>
 
                             <table:Column
-                                width="150px"
+                                width="95px"
                                 visible="false"
                             >
                                 <Label text="Sales Order" />
@@ -572,7 +572,7 @@
                             </table:Column>
 
                             <table:Column
-                                width="250px"
+                                width="150px"
                                 visible="false"
                             >
                                 <Label text="Sales Order Items" />
@@ -616,7 +616,7 @@
 
                             <table:Column
                                 id="_IDGenColumn32"
-                                width="180px"
+                                width="140px"
                                 visible="false"
                             >
                                 <Label
@@ -633,7 +633,7 @@
 
                             <table:Column
                                 id="_IDGenColumn33"
-                                width="180px"
+                                width="120px"
                                 visible="false"
                             >
                                 <Label
@@ -650,7 +650,7 @@
 
                             <table:Column
                                 id="_IDGenColumn34"
-                                width="150px"
+                                width="120px"
                                 visible="false"
                             >
                                 <Label
@@ -667,7 +667,7 @@
 
                             <table:Column
                                 id="_IDGenColumn35"
-                                width="150px"
+                                width="120px"
                                 visible="false"
                             >
                                 <Label
@@ -684,7 +684,7 @@
 
                             <table:Column
                                 id="_IDGenColumn36"
-                                width="150px"
+                                width="130px"
                                 visible="false"
                             >
                                 <Label
@@ -701,7 +701,7 @@
 
                             <table:Column
                                 id="_IDGenColumn37"
-                                width="250px"
+                                width="200px"
                                 visible="false"
                             >
                                 <Label
@@ -718,7 +718,7 @@
 
                             <table:Column
                                 id="_IDGenColumn38"
-                                width="150px"
+                                width="120px"
                                 visible="false"
                             >
                                 <Label
@@ -734,7 +734,7 @@
 
                             <table:Column
                                 id="_IDGenColumn39"
-                                width="180px"
+                                width="140px"
                                 visible="false"
                             >
                                 <Label
@@ -802,7 +802,7 @@
 
                             <table:Column
                                 id="_IDGenColumn43"
-                                width="180px"
+                                width="160px"
                                 visible="false"
                             >
                                 <Label
@@ -819,7 +819,7 @@
 
                             <table:Column
                                 id="_IDGenColumn44"
-                                width="250px"
+                                width="220px"
                                 visible="false"
                             >
                                 <Label
@@ -836,7 +836,7 @@
 
                             <table:Column
                                 id="_IDGenColumn45"
-                                width="180px"
+                                width="160px"
                                 visible="false"
                             >
                                 <Label
@@ -852,7 +852,7 @@
                             </table:Column>
                             <table:Column
                                 id="_IDGenColumn46"
-                                width="250px"
+                                width="230px"
                                 visible="false"
                             >
                                 <Label
@@ -869,12 +869,12 @@
 
                             <table:Column
                                 id="_IDGenColumn47"
-                                width="250px"
+                                width="280px"
                                 visible="false"
                             >
                                 <Label
                                     id="_IDGenLabel53"
-                                    text="Accounting Doc Created By User"
+                                    text="Accounting Document Created By User"
                                 />
                                 <table:template>
                                     <Text
@@ -903,7 +903,7 @@
 
                             <table:Column
                                 id="_IDGenColumn49"
-                                width="250px"
+                                width="230px"
                                 visible="false"
                             >
                                 <Label
@@ -920,7 +920,7 @@
 
                             <table:Column
                                 id="_IDGenColumn50"
-                                width="150px"
+                                width="100px"
                                 visible="false"
                             >
                                 <Label
@@ -937,7 +937,7 @@
 
                             <table:Column
                                 id="_IDGenColumn51"
-                                width="250px"
+                                width="120px"
                                 visible="false"
                             >
                                 <Label
@@ -954,7 +954,7 @@
 
                             <table:Column
                                 id="_IDGenColumn52"
-                                width="150px"
+                                width="120px"
                                 visible="false"
                             >
                                 <Label
@@ -988,7 +988,7 @@
 
                             <table:Column
                                 id="_IDGenColumn54"
-                                width="250px"
+                                width="180px"
                                 visible="false"
                             >
                                 <Label
@@ -1005,7 +1005,7 @@
 
                             <table:Column
                                 id="_IDGenColumn55"
-                                width="400px"
+                                width="290px"
                                 visible="false"
                             >
                                 <Label
@@ -1021,7 +1021,7 @@
                             </table:Column>
                             <table:Column
                                 id="_IDGenColumn56"
-                                width="150px"
+                                width="100px"
                                 visible="false"
                             >
                                 <Label
@@ -1038,7 +1038,7 @@
 
                             <table:Column
                                 id="_IDGenColumn57"
-                                width="150px"
+                                width="120px"
                                 visible="false"
                             >
                                 <Label
@@ -1055,7 +1055,7 @@
 
                             <table:Column
                                 id="_IDGenColumn58"
-                                width="150px"
+                                width="120px"
                                 visible="false"
                             >
                                 <Label
@@ -1072,7 +1072,7 @@
 
                             <table:Column
                                 id="_IDGenColumn59"
-                                width="150px"
+                                width="120px"
                                 visible="false"
                             >
                                 <Label
@@ -1089,7 +1089,7 @@
 
                             <table:Column
                                 id="_IDGenColumn60"
-                                width="150px"
+                                width="120px"
                                 visible="false"
                             >
                                 <Label
@@ -1106,7 +1106,7 @@
 
                             <table:Column
                                 id="_IDGenColumn61"
-                                width="150px"
+                                width="120px"
                                 visible="false"
                             >
                                 <Label
@@ -1123,12 +1123,12 @@
 
                             <table:Column
                                 id="_IDGenColumn62"
-                                width="150px"
+                                width="140px"
                                 visible="false"
                             >
                                 <Label
                                     id="_IDGenLabel68"
-                                    text="Posting Is Blocked"
+                                    text="Posting is Blocked"
                                 />
                                 <table:template>
                                     <Text
@@ -1140,7 +1140,7 @@
 
                             <table:Column
                                 id="_IDGenColumn63"
-                                width="150px"
+                                width="130px"
                                 visible="false"
                             >
                                 <Label
@@ -1157,7 +1157,7 @@
 
                             <table:Column
                                 id="_IDGenColumn64"
-                                width="150px"
+                                width="120px"
                                 visible="false"
                             >
                                 <Label
@@ -1173,7 +1173,7 @@
                             </table:Column>
                             <table:Column
                                 id="_IDGenColumn65"
-                                width="300px"
+                                width="320px"
                                 visible="false"
                             >
                                 <Label
@@ -1189,110 +1189,8 @@
                             </table:Column>
 
                             <table:Column
-                                id="_IDGenColumn66"
-                                width="300px"
-                                visible="false"
-                            >
-                                <Label
-                                    id="_IDGenLabel72"
-                                    text="Amount In Company Code Currency - Days 0 - Day1"
-                                />
-                                <table:template>
-                                    <Text
-                                        id="_IDGenText65"
-                                        text="{docs>AmountInCompanyCodeCurrency_Bucket1}"
-                                    />
-                                </table:template>
-                            </table:Column>
-
-                            <table:Column
-                                id="_IDGenColumn67"
-                                width="300px"
-                                visible="false"
-                            >
-                                <Label
-                                    id="_IDGenLabel73"
-                                    text="Amount In Company Code Currency - Days Day1+1 - Day 2"
-                                />
-                                <table:template>
-                                    <Text
-                                        id="_IDGenText66"
-                                        text="{docs>AmountInCompanyCodeCurrency_Bucket2}"
-                                    />
-                                </table:template>
-                            </table:Column>
-
-                            <table:Column
-                                id="_IDGenColumn68"
-                                width="300px"
-                                visible="false"
-                            >
-                                <Label
-                                    id="_IDGenLabel74"
-                                    text="Amount In Company Code Currency - Days Day2+1 - Day 3"
-                                />
-                                <table:template>
-                                    <Text
-                                        id="_IDGenText67"
-                                        text="{docs>AmountInCompanyCodeCurrency_Bucket3}"
-                                    />
-                                </table:template>
-                            </table:Column>
-
-                            <table:Column
-                                id="_IDGenColumn69"
-                                width="300px"
-                                visible="false"
-                            >
-                                <Label
-                                    id="_IDGenLabel75"
-                                    text="Amount In Company Code Currency - Days Day3+1 - Day 4"
-                                />
-                                <table:template>
-                                    <Text
-                                        id="_IDGenText68"
-                                        text="{docs>AmountInCompanyCodeCurrency_Bucket4}"
-                                    />
-                                </table:template>
-                            </table:Column>
-
-                            <table:Column
-                                id="_IDGenColumn70"
-                                width="300px"
-                                visible="false"
-                            >
-                                <Label
-                                    id="_IDGenLabel76"
-                                    text="Amount In Company Code Currency - Days Day4+1 - Day 5"
-                                />
-                                <table:template>
-                                    <Text
-                                        id="_IDGenText69"
-                                        text="{docs>AmountInCompanyCodeCurrency_Bucket5}"
-                                    />
-                                </table:template>
-                            </table:Column>
-
-                            <table:Column
-                                id="_IDGenColumn71"
-                                width="300px"
-                                visible="false"
-                            >
-                                <Label
-                                    id="_IDGenLabel77"
-                                    text="Amount In Company Code Currency - Days Day5+"
-                                />
-                                <table:template>
-                                    <Text
-                                        id="_IDGenText70"
-                                        text="{docs>AmountInCompanyCodeCurrency_Bucket6}"
-                                    />
-                                </table:template>
-                            </table:Column>
-
-                            <table:Column
                                 id="_IDGenColumn72"
-                                width="300px"
+                                width="290px"
                                 visible="false"
                             >
                                 <Label
@@ -1307,110 +1205,9 @@
                                 </table:template>
                             </table:Column>
 
-                            <table:Column
-                                id="_IDGenColumn73"
-                                width="300px"
-                                visible="false"
-                            >
-                                <Label
-                                    id="_IDGenLabel79"
-                                    text="Amount In Transaction Currency - Days 0 - Day1"
-                                />
-                                <table:template>
-                                    <Text
-                                        id="_IDGenText72"
-                                        text="{docs>AmountInTransactionCurrency_Bucket1}"
-                                    />
-                                </table:template>
-                            </table:Column>
-
-                            <table:Column
-                                id="_IDGenColumn74"
-                                width="300px"
-                                visible="false"
-                            >
-                                <Label
-                                    id="_IDGenLabel80"
-                                    text="Amount In Transaction Currency - Days Day1+1 - Day 2"
-                                />
-                                <table:template>
-                                    <Text
-                                        id="_IDGenText73"
-                                        text="{docs>AmountInTransactionCurrency_Bucket2}"
-                                    />
-                                </table:template>
-                            </table:Column>
-
-                            <table:Column
-                                id="_IDGenColumn75"
-                                width="300px"
-                                visible="false"
-                            >
-                                <Label
-                                    id="_IDGenLabel81"
-                                    text="Amount In Transaction Currency - Days Day2+1 - Day 3"
-                                />
-                                <table:template>
-                                    <Text
-                                        id="_IDGenText74"
-                                        text="{docs>AmountInTransactionCurrency_Bucket3}"
-                                    />
-                                </table:template>
-                            </table:Column>
-
-                            <table:Column
-                                id="_IDGenColumn76"
-                                width="300px"
-                                visible="false"
-                            >
-                                <Label
-                                    id="_IDGenLabel82"
-                                    text="Amount In Transaction Currency - Days Day3+1 - Day 4"
-                                />
-                                <table:template>
-                                    <Text
-                                        id="_IDGenText75"
-                                        text="{docs>AmountInTransactionCurrency_Bucket4}"
-                                    />
-                                </table:template>
-                            </table:Column>
-
-                            <table:Column
-                                id="_IDGenColumn77"
-                                width="300px"
-                                visible="false"
-                            >
-                                <Label
-                                    id="_IDGenLabel83"
-                                    text="Amount In Transaction Currency - Days Day4+1 - Day 5"
-                                />
-                                <table:template>
-                                    <Text
-                                        id="_IDGenText76"
-                                        text="{docs>AmountInTransactionCurrency_Bucket5}"
-                                    />
-                                </table:template>
-                            </table:Column>
-                            <table:Column
-                                id="_IDGenColumn78"
-                                width="300px"
-                                visible="false"
-                            >
-                                <Label
-                                    id="_IDGenLabel84"
-                                    text="Amount In Transaction Currency - Days Day5+"
-                                />
-                                <table:template>
-                                    <Text
-                                        id="_IDGenText77"
-                                        text="{docs>AmountInTransactionCurrency_Bucket6}"
-                                    />
-                                </table:template>
-                            </table:Column>
-
-                            <table:Column
+                             <table:Column
                                 id="_IDGenColumn79"
-                                width="300px"
+                                width="290px"
                                 visible="false"
                             >
                                 <Label
@@ -1426,13 +1223,47 @@
                             </table:Column>
 
                             <table:Column
+                                id="_IDGenColumn66"
+                                width="290px"
+                                visible="false"
+                            >
+                                <Label
+                                    id="_IDGenLabel72"
+                                    text="Amount In Company Code Currency - 0-30"
+                                />
+                                <table:template>
+                                    <Text
+                                        id="_IDGenText65"
+                                        text="{docs>AmountInCompanyCodeCurrency_Bucket1}"
+                                    />
+                                </table:template>
+                            </table:Column>
+
+                            <table:Column
+                                id="_IDGenColumn73"
+                                width="290px"
+                                visible="false"
+                            >
+                                <Label
+                                    id="_IDGenLabel79"
+                                    text="Amount In Transaction Currency - 0-30"
+                                />
+                                <table:template>
+                                    <Text
+                                        id="_IDGenText72"
+                                        text="{docs>AmountInTransactionCurrency_Bucket1}"
+                                    />
+                                </table:template>
+                            </table:Column>
+
+                             <table:Column
                                 id="_IDGenColumn80"
-                                width="300px"
+                                width="290px"
                                 visible="false"
                             >
                                 <Label
                                     id="_IDGenLabel86"
-                                    text="Amount In Additional Currency 1 - Days 0 - Day1"
+                                    text="Amount In Additional Currency 1 - 0-30"
                                 />
                                 <table:template>
                                     <Text
@@ -1443,30 +1274,63 @@
                             </table:Column>
 
                             <table:Column
-                                id="_IDGenColumn81"
-                                width="300px"
+                                id="_IDGenColumn67"
+                                width="290px"
                                 visible="false"
                             >
                                 <Label
-                                    id="_IDGenLabel87"
-                                    text="Amount In Additional Currency 1 - Days Day1+1 - Day 2"
+                                    id="_IDGenLabel73"
+                                    text="Amount In Company Code Currency - 31-60"
                                 />
                                 <table:template>
                                     <Text
-                                        id="_IDGenText80"
-                                        text="{docs>AmountInAdditionalCurrency1_Bucket2}"
+                                        id="_IDGenText66"
+                                        text="{docs>AmountInCompanyCodeCurrency_Bucket2}"
                                     />
                                 </table:template>
                             </table:Column>
 
                             <table:Column
+                                id="_IDGenColumn68"
+                                width="290px"
+                                visible="false"
+                            >
+                                <Label
+                                    id="_IDGenLabel74"
+                                    text="Amount In Company Code Currency - 61-90"
+                                />
+                                <table:template>
+                                    <Text
+                                        id="_IDGenText67"
+                                        text="{docs>AmountInCompanyCodeCurrency_Bucket3}"
+                                    />
+                                </table:template>
+                            </table:Column>
+
+                            <table:Column
+                                id="_IDGenColumn75"
+                                width="290px"
+                                visible="false"
+                            >
+                                <Label
+                                    id="_IDGenLabel81"
+                                    text="Amount In Transaction Currency - 61-90"
+                                />
+                                <table:template>
+                                    <Text
+                                        id="_IDGenText74"
+                                        text="{docs>AmountInTransactionCurrency_Bucket3}"
+                                    />
+                                </table:template>
+                            </table:Column>
+                             <table:Column
                                 id="_IDGenColumn82"
-                                width="300px"
+                                width="290px"
                                 visible="false"
                             >
                                 <Label
                                     id="_IDGenLabel88"
-                                    text="Amount In Additional Currency 1 - Days Day2+1 - Day 3"
+                                    text="Amount In Additional Currency 1 - 61-90"
                                 />
                                 <table:template>
                                     <Text
@@ -1477,13 +1341,46 @@
                             </table:Column>
 
                             <table:Column
+                                id="_IDGenColumn69"
+                                width="310px"
+                                visible="false"
+                            >
+                                <Label
+                                    id="_IDGenLabel75"
+                                    text="Amount In Company Code Currency - 91-180"
+                                />
+                                <table:template>
+                                    <Text
+                                        id="_IDGenText68"
+                                        text="{docs>AmountInCompanyCodeCurrency_Bucket4}"
+                                    />
+                                </table:template>
+                            </table:Column>
+                            <table:Column
+                                id="_IDGenColumn76"
+                                width="290px"
+                                visible="false"
+                            >
+                                <Label
+                                    id="_IDGenLabel82"
+                                    text="Amount In Transaction Currency - 91-180"
+                                />
+                                <table:template>
+                                    <Text
+                                        id="_IDGenText75"
+                                        text="{docs>AmountInTransactionCurrency_Bucket4}"
+                                    />
+                                </table:template>
+                            </table:Column>
+
+                             <table:Column
                                 id="_IDGenColumn83"
-                                width="300px"
+                                width="290px"
                                 visible="false"
                             >
                                 <Label
                                     id="_IDGenLabel89"
-                                    text="Amount In Additional Currency 1 - Days Day3+1 - Day 4"
+                                    text="Amount In Additional Currency 1 - 91-180"
                                 />
                                 <table:template>
                                     <Text
@@ -1494,13 +1391,45 @@
                             </table:Column>
 
                             <table:Column
+                                id="_IDGenColumn70"
+                                width="320px"
+                                visible="false"
+                            >
+                                <Label
+                                    id="_IDGenLabel76"
+                                    text="Amount In Company Code Currency - 181-365"
+                                />
+                                <table:template>
+                                    <Text
+                                        id="_IDGenText69"
+                                        text="{docs>AmountInCompanyCodeCurrency_Bucket5}"
+                                    />
+                                </table:template>
+                            </table:Column>
+                             <table:Column
+                                id="_IDGenColumn77"
+                                width="290px"
+                                visible="false"
+                            >
+                                <Label
+                                    id="_IDGenLabel83"
+                                    text="Amount In Transaction Currency - 181-365"
+                                />
+                                <table:template>
+                                    <Text
+                                        id="_IDGenText76"
+                                        text="{docs>AmountInTransactionCurrency_Bucket5}"
+                                    />
+                                </table:template>
+                            </table:Column>
+                             <table:Column
                                 id="_IDGenColumn84"
-                                width="300px"
+                                width="290px"
                                 visible="false"
                             >
                                 <Label
                                     id="_IDGenLabel90"
-                                    text="Amount In Additional Currency 1 - Days Day4+1 - Day 5"
+                                    text="Amount In Additional Currency 1 - 181-365"
                                 />
                                 <table:template>
                                     <Text
@@ -1511,13 +1440,47 @@
                             </table:Column>
 
                             <table:Column
+                                id="_IDGenColumn71"
+                                width="290px"
+                                visible="false"
+                            >
+                                <Label
+                                    id="_IDGenLabel77"
+                                    text="Amount In Company Code Currency - 365+"
+                                />
+                                <table:template>
+                                    <Text
+                                        id="_IDGenText70"
+                                        text="{docs>AmountInCompanyCodeCurrency_Bucket6}"
+                                    />
+                                </table:template>
+                            </table:Column>
+
+                             <table:Column
+                                id="_IDGenColumn78"
+                                width="270px"
+                                visible="false"
+                            >
+                                <Label
+                                    id="_IDGenLabel84"
+                                    text="Amount In Transaction Currency - 365+"
+                                />
+                                <table:template>
+                                    <Text
+                                        id="_IDGenText77"
+                                        text="{docs>AmountInTransactionCurrency_Bucket6}"
+                                    />
+                                </table:template>
+                            </table:Column>
+
+                             <table:Column
                                 id="_IDGenColumn85"
-                                width="300px"
+                                width="270px"
                                 visible="false"
                             >
                                 <Label
                                     id="_IDGenLabel91"
-                                    text="Amount In Additional Currency 1 - Days Day5+"
+                                    text="Amount In Additional Currency 1 - 365+"
                                 />
                                 <table:template>
                                     <Text
@@ -1526,6 +1489,31 @@
                                     />
                                 </table:template>
                             </table:Column>
+
+                            
+
+                            
+
+
+                            
+
+                            
+
+                           
+                           
+
+                           
+
+                           
+
+                           
+                           
+
+                           
+
+                           
+
+                           
                         </table:columns>
                     </table:Table>
                 </Panel>

@@ -8,7 +8,8 @@ sap.ui.define([
     "sap/m/VBox",
     "sap/m/List",
     "sap/m/StandardListItem",
-    "sap/ui/layout/form/SimpleForm"
+    "sap/ui/layout/form/SimpleForm",
+    "sap/m/MessageBox"
 ], function (
     Controller,
     JSONModel,
@@ -19,7 +20,8 @@ sap.ui.define([
     VBox,
     List,
     StandardListItem,
-    SimpleForm
+    SimpleForm,
+    MessageBox
 ) {
     "use strict";
 
@@ -38,7 +40,7 @@ sap.ui.define([
         },
 
 
-       
+
 
         onPressGo: function () {
             const oView = this.getView();
@@ -72,7 +74,7 @@ sap.ui.define([
             const oAgeingGroup = this.byId("ageingGroup");
             if (oAgeingGroup.getSelectedIndex() === -1) {
                 MessageToast.show("Please select Ageing From");
-                  bValid = false;;
+                bValid = false;;
             }
 
 
@@ -124,18 +126,24 @@ sap.ui.define([
 
 
 
+
+
+
         _openRangeDialog: function (oInput, sTitle) {
             this._oRangeInput = oInput;
 
             if (!this._oRangeDialog) {
+
                 this._oFromInput = new sap.m.Input({
                     placeholder: "From",
-                    width: "100%"
+                    width: "100%",
+                    liveChange: this._onRangeInputChange.bind(this)
                 });
 
                 this._oToInput = new sap.m.Input({
                     placeholder: "To",
-                    width: "100%"
+                    width: "100%",
+                    liveChange: this._onRangeInputChange.bind(this)
                 });
 
                 this._oRangeList = new sap.m.List({
@@ -199,10 +207,9 @@ sap.ui.define([
                         text: "Cancel",
                         press: () => this._oRangeDialog.close()
                     })
-                }),
+                });
 
-
-                    this.getView().addDependent(this._oRangeDialog);
+                this.getView().addDependent(this._oRangeDialog);
             }
 
 
@@ -220,9 +227,12 @@ sap.ui.define([
 
             this._oFromInput.setValue("");
             this._oToInput.setValue("");
+            this._oFromInput.setValueState("None");
+            this._oToInput.setValueState("None");
 
             this._oRangeDialog.open();
         },
+
 
         onGLF4: function (oEvent) {
             this._openRangeDialog(oEvent.getSource(), "GL Account");
@@ -237,7 +247,7 @@ sap.ui.define([
         },
 
 
-        
+
 
 
 
@@ -270,11 +280,55 @@ sap.ui.define([
             this._oToInput.setValue("");
         },
 
+
+
+
+
         _onConfirmRanges: function () {
-            const aRanges = this._oRangeList.getItems().map(oItem => oItem.getTitle());
+
+            const sFrom = this._oFromInput.getValue().trim();
+            const sTo = this._oToInput.getValue().trim();
+            const aItems = this._oRangeList.getItems();
+
+
+            this._oFromInput.setValueState("None");
+            this._oToInput.setValueState("None");
+
+
+            if ((sFrom || sTo) && aItems.length === 0) {
+                sap.m.MessageBox.warning(
+                    "You have entered a range, but it has not been added.\n\n" +
+                    "Please click the Add button to add the range before pressing OK."
+                );
+                return;
+            }
+
+
+            if (aItems.length === 0) {
+
+                this._oFromInput.setValueState("Error");
+                this._oFromInput.setValueStateText("Range is required");
+
+                this._oToInput.setValueState("Error");
+                this._oToInput.setValueStateText("Range is required");
+
+                sap.m.MessageBox.error(
+                    "No range has been added.\n\n" +
+                    "Please add at least one range to continue."
+                );
+
+                return;
+            }
+
+
+            const aRanges = aItems.map(oItem => oItem.getTitle());
             this._oRangeInput.setValue(aRanges.join(","));
             this._oRangeInput.setValueState("None");
             this._oRangeDialog.close();
+        },
+        _onRangeInputChange: function () {
+            this._oFromInput.setValueState("None");
+            this._oToInput.setValueState("None");
         },
 
 

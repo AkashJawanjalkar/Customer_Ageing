@@ -109,29 +109,31 @@ sap.ui.define([
             { name: "PostingIsBlocked", label: "Posting Is Blocked", visible: false },
             { name: "TradingPartner", label: "Trading Partner", visible: false },
             { name: "AgeInDays", label: "Age (Days)", visible: false, dataType: "number" },
-            { name: "AmountInCompanyCodeCurrency_Bucket0", label: "CCY Bucket 0", visible: false, dataType: "number" },
-            { name: "AmountInCompanyCodeCurrency_Bucket1", label: "CCY Bucket 1", visible: false, dataType: "number" },
-            { name: "AmountInCompanyCodeCurrency_Bucket2", label: "CCY Bucket 2", visible: false, dataType: "number" },
-            { name: "AmountInCompanyCodeCurrency_Bucket3", label: "CCY Bucket 3", visible: false, dataType: "number" },
-            { name: "AmountInCompanyCodeCurrency_Bucket4", label: "CCY Bucket 4", visible: false, dataType: "number" },
-            { name: "AmountInCompanyCodeCurrency_Bucket5", label: "CCY Bucket 5", visible: false, dataType: "number" },
-            { name: "AmountInCompanyCodeCurrency_Bucket6", label: "CCY Bucket 6", visible: false, dataType: "number" },
+            { name: "AmountInCompanyCodeCurrency_Not Due", label: "Amt.CC.Currency Not Due", visible: false, dataType: "number" },
+            { name: "AmountInCompanyCodeCurrency_Bucket1", label: "Amt.CC.Currency-0-30", visible: false, dataType: "number" },
+            { name: "AmountInCompanyCodeCurrency_Bucket2", label: "Amt.CC.Currency-31-60", visible: false, dataType: "number" },
+            { name: "AmountInCompanyCodeCurrency_Bucket3", label: "Amt.CC.Currency-61-90", visible: false, dataType: "number" },
+            { name: "AmountInCompanyCodeCurrency_Bucket4", label: "Amt.CC.Currency-91-180", visible: false, dataType: "number" },
+            { name: "AmountInCompanyCodeCurrency_Bucket5", label: "Amt.CC.Currency-181-365", visible: false, dataType: "number" },
+            { name: "AmountInCompanyCodeCurrency_Bucket6", label: "Amt.CC.Currency-365+", visible: false, dataType: "number" },
 
-            { name: "AmountInTransactionCurrency_Bucket0", label: "Txn CCY Bucket 0", visible: false, dataType: "number" },
-            { name: "AmountInTransactionCurrency_Bucket1", label: "Txn CCY Bucket 1", visible: false, dataType: "number" },
-            { name: "AmountInTransactionCurrency_Bucket2", label: "Txn CCY Bucket 2", visible: false, dataType: "number" },
-            { name: "AmountInTransactionCurrency_Bucket3", label: "Txn CCY Bucket 3", visible: false, dataType: "number" },
-            { name: "AmountInTransactionCurrency_Bucket4", label: "Txn CCY Bucket 4", visible: false, dataType: "number" },
-            { name: "AmountInTransactionCurrency_Bucket5", label: "Txn CCY Bucket 5", visible: false, dataType: "number" },
-            { name: "AmountInTransactionCurrency_Bucket6", label: "Txn CCY Bucket 6", visible: false, dataType: "number" },
+            { name: "AmountInTransactionCurrency_Not Due", label: "Amt.Txn.Currency Not Due", visible: false, dataType: "number" },
+            { name: "AmountInTransactionCurrency_Bucket1", label: "Amt.Txn.Currency-0-30", visible: false, dataType: "number" },
+            { name: "AmountInTransactionCurrency_Bucket2", label: "Amt.Txn.Currency-31-60", visible: false, dataType: "number" },
+            { name: "AmountInTransactionCurrency_Bucket3", label: "Amt.Txn.Currency-61-90", visible: false, dataType: "number" },
+            { name: "AmountInTransactionCurrency_Bucket4", label: "Amt.Txn.Currency-91-180", visible: false, dataType: "number" },
+            { name: "AmountInTransactionCurrency_Bucket5", label: "Amt.Txn.Currency-181-365", visible: false, dataType: "number" },
+            { name: "AmountInTransactionCurrency_Bucket6", label: "Amt.Txn.Currency-365+", visible: false, dataType: "number" },
 
-            { name: "AmountInAdditionalCurrency1_Bucket0", label: "Addl CCY Bucket 0", visible: false, dataType: "number" },
-            { name: "AmountInAdditionalCurrency1_Bucket1", label: "Addl CCY Bucket 1", visible: false, dataType: "number" },
-            { name: "AmountInAdditionalCurrency1_Bucket2", label: "Addl CCY Bucket 2", visible: false, dataType: "number" },
-            { name: "AmountInAdditionalCurrency1_Bucket3", label: "Addl CCY Bucket 3", visible: false, dataType: "number" },
-            { name: "AmountInAdditionalCurrency1_Bucket4", label: "Addl CCY Bucket 4", visible: false, dataType: "number" },
-            { name: "AmountInAdditionalCurrency1_Bucket5", label: "Addl CCY Bucket 5", visible: false, dataType: "number" },
-            { name: "AmountInAdditionalCurrency1_Bucket6", label: "Addl CCY Bucket 6", visible: false, dataType: "number" }
+
+
+            { name: "AmountInAdditionalCurrency1_Bucket0", label: "Amt.Addl.Currency1 Not Due", visible: false, dataType: "number" },
+            { name: "AmountInAdditionalCurrency1_Bucket1", label: "Amt.Addl.Currency1-0-30", visible: false, dataType: "number" },
+            { name: "AmountInAdditionalCurrency1_Bucket2", label: "Amt.Addl.Currency1-31-60", visible: false, dataType: "number" },
+            { name: "AmountInAdditionalCurrency1_Bucket3", label: "Amt.Addl.Currency1-61-90", visible: false, dataType: "number" },
+            { name: "AmountInAdditionalCurrency1_Bucket4", label: "Amt.Addl.Currency1-91-180", visible: false, dataType: "number" },
+            { name: "AmountInAdditionalCurrency1_Bucket5", label: "Amt.Addl.Currency1-181-365", visible: false, dataType: "number" },
+            { name: "AmountInAdditionalCurrency1_Bucket6", label: "Amt.Addl.Currency1-365+", visible: false, dataType: "number" },
 
 
 
@@ -165,7 +167,7 @@ sap.ui.define([
             // Call backend using this payload
             this._callBackend(oPayload);
         },
-        
+
 
 
         onOpenPersonalization: function () {
@@ -302,7 +304,7 @@ sap.ui.define([
                         );
 
                     } else {
-                        
+
                         oFilter = new sap.ui.model.Filter(
                             sPath,
                             sap.ui.model.FilterOperator.Contains,
@@ -331,7 +333,7 @@ sap.ui.define([
         _createDynamicFilters: function () {
             const oFilterBar = this.byId("filterBar");
             if (!oFilterBar) return;
-         
+
 
             this._filterConfig.forEach(cfg => {
                 let oControl;
@@ -362,7 +364,7 @@ sap.ui.define([
         },
 
 
-       
+
 
         formatDate: function (sDate) {
             if (!sDate) return "";
@@ -388,7 +390,7 @@ sap.ui.define([
                 method: "POST",
                 contentType: "application/json",
                 data: JSON.stringify(oPayload),
-                success: (oResponse) => { 
+                success: (oResponse) => {
                     console.log("Backend Response:", oResponse);
 
 
@@ -397,7 +399,7 @@ sap.ui.define([
                     console.log("total row found------>", result.length)
                     this.getView().getModel("docs").setProperty("/nDataLength", result.length);
 
-                   
+
 
                 },
                 error: function (oError) {
@@ -418,150 +420,6 @@ sap.ui.define([
 
         },
 
-        //         onPressDownload: function () {
-        //     const oTable = this.byId("lineItemsTable");
-        //     if (!oTable) return;
-
-        //     const oBinding = oTable.getBinding("rows");
-        //     if (!oBinding) return;
-
-
-        //     const aContexts = oBinding.getContexts(0, oBinding.getLength());
-
-
-        //     const aData = aContexts.map(oCtx => oCtx.getObject());
-
-        //     if (!aData.length) {
-        //         sap.m.MessageToast.show("No data to download");
-        //         return;
-        //     }
-
-        //     const aColumns = this._getExcelColumns();
-
-        //     const oSettings = {
-        //         workbook: {
-        //             columns: aColumns
-        //         },
-        //         dataSource: aData,
-        //         fileName: "Customer_Ageing.xlsx"
-        //     };
-
-        //     const oSheet = new sap.ui.export.Spreadsheet(oSettings);
-        //     oSheet.build().finally(() => oSheet.destroy());
-        // }
-        // ,
-        // _getExcelColumns: function () {
-        //     return [
-        //         { label: "Company Code", property: "CompanyCode" },
-        //         { label: "Fiscal Year", property: "FiscalYear" },
-        //         { label: "Accounting Document", property: "AccountingDocument" },
-        //         { label: "Accounting Document Item", property: "AccountingDocumentItem" },
-        //         { label: "Clearing Date", property: "ClearingDate", type: "date" },
-        //         { label: "Special GL Code", property: "SpecialGLCode" },
-        //         { label: "Debit / Credit Indicator", property: "DebitCreditCode" },
-        //         { label: "Assignment Reference", property: "AssignmentReference" },
-        //         { label: "Document Item Text", property: "DocumentItemText" },
-        //         { label: "Partner Company", property: "PartnerCompany" },
-
-        //         { label: "Purchase Order", property: "PurchasingDocument" },
-        //         { label: "Purchase Order Item", property: "PurchasingDocumentItem" },
-        //         { label: "Billing Document", property: "BillingDocument" },
-        //         { label: "Sales Order", property: "SalesDocument" },
-        //         { label: "Sales Order Item", property: "SalesDocumentItem" },
-
-        //         { label: "GL Account", property: "GLAccount" },
-        //         { label: "GL Account Name", property: "GLAccountLongName" },
-        //         { label: "Customer", property: "Customer" },
-        //         { label: "Supplier", property: "Supplier" },
-
-        //         { label: "Baseline Date", property: "DueCalculationBaseDate", type: "date" },
-        //         { label: "Payment Terms", property: "PaymentTerms" },
-        //         { label: "Cash Discount 1 Days", property: "CashDiscount1Days" },
-        //         { label: "Cash Discount 2 Days", property: "CashDiscount2Days" },
-        //         { label: "Net Payment Days", property: "NetPaymentDays" },
-
-        //         { label: "Dunning Key", property: "DunningKey" },
-        //         { label: "Dunning Blocking Reason", property: "DunningBlockingReason" },
-        //         { label: "Last Dunning Date", property: "LastDunningDate", type: "date" },
-        //         { label: "Dunning Level", property: "DunningLevel" },
-        //         { label: "Dunning Area", property: "DunningArea" },
-
-        //         { label: "Reference 1", property: "Reference1IDByBusinessPartner" },
-        //         { label: "Reference 2", property: "Reference2IDByBusinessPartner" },
-
-        //         { label: "Credit Control Area", property: "CreditControlArea" },
-        //         { label: "Business Place", property: "BusinessPlace" },
-        //         { label: "Fiscal Period", property: "FiscalPeriod" },
-
-        //         { label: "Posting Date", property: "PostingDate", type: "date" },
-        //         { label: "Document Date", property: "DocumentDate", type: "date" },
-        //         { label: "Accounting Document Type", property: "AccountingDocumentType" },
-        //         { label: "Net Due Date", property: "NetDueDate", type: "date" },
-
-        //         { label: "Offsetting Account", property: "OffsettingAccount" },
-        //         { label: "Offsetting Account Type", property: "OffsettingAccountType" },
-
-        //         { label: "Company Code Currency", property: "CompanyCodeCurrency" },
-        //         { label: "Amount In Company Code Currency", property: "AmountInCompanyCodeCurrency", type: "number" },
-
-        //         { label: "Transaction Currency", property: "TransactionCurrency" },
-        //         { label: "Amount In Transaction Currency", property: "AmountInTransactionCurrency", type: "number" },
-
-        //         { label: "Additional Currency 1", property: "AdditionalCurrency1" },
-        //         { label: "Amount In Additional Currency 1", property: "AmountInAdditionalCurrency1", type: "number" },
-
-        //         { label: "Created By User", property: "AccountingDocCreatedByUser" },
-        //         { label: "Document Header Text", property: "AccountingDocumentHeaderText" },
-        //         { label: "Alternative Reference Document", property: "AlternativeReferenceDocument" },
-
-        //         { label: "Segment", property: "Segment" },
-        //         { label: "Segment Name", property: "SegmentName" },
-        //         { label: "Profit Center", property: "ProfitCenter" },
-        //         { label: "Profit Center Name", property: "ProfitCenterName" },
-
-        //         { label: "Customer Account Group", property: "CustomerAccountGroup" },
-        //         { label: "Customer Full Name", property: "CustomerFullName" },
-
-        //         { label: "Industry", property: "Industry" },
-        //         { label: "Industry Code 1", property: "IndustryCode1" },
-        //         { label: "Industry Code 2", property: "IndustryCode2" },
-        //         { label: "Industry Code 3", property: "IndustryCode3" },
-        //         { label: "Industry Code 4", property: "IndustryCode4" },
-        //         { label: "Industry Code 5", property: "IndustryCode5" },
-
-        //         { label: "Posting Is Blocked", property: "PostingIsBlocked" },
-        //         { label: "Trading Partner", property: "TradingPartner" },
-
-        //         { label: "Age in Days", property: "AgeInDays", type: "number" },
-
-        //         // ===== Aging Buckets – Company Code Currency =====
-        //         { label: "AmountInCompanyCodeCurrency - Not Due", property: "AmountInCompanyCodeCurrency_Bucket0", type: "number" },
-        //         { label: "AmountInCompanyCodeCurrency - Days 0 - Day1", property: "AmountInCompanyCodeCurrency_Bucket1", type: "number" },
-        //         { label: "AmountInCompanyCodeCurrency - Days Day1+1 - Day2", property: "AmountInCompanyCodeCurrency_Bucket2", type: "number" },
-        //         { label: "AmountInCompanyCodeCurrency - Days Day2+1 - Day3", property: "AmountInCompanyCodeCurrency_Bucket3", type: "number" },
-        //         { label: "AmountInCompanyCodeCurrency - Days Day3+1 - Day4", property: "AmountInCompanyCodeCurrency_Bucket4", type: "number" },
-        //         { label: "AmountInCompanyCodeCurrency - Days Day4+1 - Day5", property: "AmountInCompanyCodeCurrency_Bucket5", type: "number" },
-        //         { label: "AmountInCompanyCodeCurrency - Days Day5+", property: "AmountInCompanyCodeCurrency_Bucket6", type: "number" },
-
-        //         // ===== Aging Buckets – Transaction Currency =====
-        //         { label: "AmountInTransactionCurrency - Not Due", property: "AmountInTransactionCurrency_Bucket0", type: "number" },
-        //         { label: "AmountInTransactionCurrency - Days 0 - Day1", property: "AmountInTransactionCurrency_Bucket1", type: "number" },
-        //         { label: "AmountInTransactionCurrency - Days Day1+1 - Day2", property: "AmountInTransactionCurrency_Bucket2", type: "number" },
-        //         { label: "AmountInTransactionCurrency - Days Day2+1 - Day3", property: "AmountInTransactionCurrency_Bucket3", type: "number" },
-        //         { label: "AmountInTransactionCurrency - Days Day3+1 - Day4", property: "AmountInTransactionCurrency_Bucket4", type: "number" },
-        //         { label: "AmountInTransactionCurrency - Days Day4+1 - Day5", property: "AmountInTransactionCurrency_Bucket5", type: "number" },
-        //         { label: "AmountInTransactionCurrency - Days Day5+", property: "AmountInTransactionCurrency_Bucket6", type: "number" },
-
-        //         // ===== Aging Buckets – Additional Currency 1 =====
-        //         { label: "AmountInAdditionalCurrency1 - Not Due", property: "AmountInAdditionalCurrency1_Bucket0", type: "number" },
-        //         { label: "AmountInAdditionalCurrency1 - Days 0 - Day1", property: "AmountInAdditionalCurrency1_Bucket1", type: "number" },
-        //         { label: "AmountInAdditionalCurrency1 - Days Day1+1 - Day2", property: "AmountInAdditionalCurrency1_Bucket2", type: "number" },
-        //         { label: "AmountInAdditionalCurrency1 - Days Day2+1 - Day3", property: "AmountInAdditionalCurrency1_Bucket3", type: "number" },
-        //         { label: "AmountInAdditionalCurrency1 - Days Day3+1 - Day4", property: "AmountInAdditionalCurrency1_Bucket4", type: "number" },
-        //         { label: "AmountInAdditionalCurrency1 - Days Day4+1 - Day5", property: "AmountInAdditionalCurrency1_Bucket5", type: "number" },
-        //         { label: "AmountInAdditionalCurrency1 - Days Day5+", property: "AmountInAdditionalCurrency1_Bucket6", type: "number" }
-        //     ];
-        // },
 
 
         onPressDownload: function () {
@@ -607,7 +465,7 @@ sap.ui.define([
                 const oTemplate = oCol.getTemplate();
                 let sProperty = "";
 
-              
+
                 if (oTemplate?.getBindingInfo("text")) {
                     sProperty = oTemplate.getBindingInfo("text").parts[0].path;
                 } else if (oTemplate?.getBindingInfo("value")) {

@@ -6,22 +6,18 @@
 >
     <Page
         id="page"
+         title="Customer Ageing"
         class="sapUiResponsiveContentPadding  "
+       
     >
         <content>
             <Panel
                 id="filterSection"
                 width="100%"
-                class="sapUiMediumMarginTop"
+                class="sapUiMediumMarginEnd"
+               
             >
-                <headerToolbar>
-                    <OverflowToolbar id="_IDGenOverflowToolbar2">
-                        <Title
-                            id="_IDGenTitle"
-                            text="Customer Ageing"
-                        />
-                    </OverflowToolbar>
-                </headerToolbar>
+                
 
                 <HBox
                     id="_IDGenMainHBox"
@@ -62,6 +58,8 @@
                             <Input
                                 id="glAccountInput"
                                 width="410px"
+                               valueHelpOnly="true"
+                                enabled="true"
                                 showValueHelp="true"
                                 valueHelpRequest=".onGLF4"
                             />
@@ -81,6 +79,7 @@
                                 id="customerInput"
                                 width="410px"
                                 showValueHelp="true"
+                                 valueHelpOnly="true"
                                 valueHelpRequest=".onCustomerF4"
                             />
                         </HBox>
@@ -99,6 +98,7 @@
                                 id="profitCentreInput"
                                 width="410px"
                                 showValueHelp="true"
+                                 valueHelpOnly="true"
                                 valueHelpRequest=".onProfitCentreF4"
                             />
                         </HBox>
